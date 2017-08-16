@@ -9,7 +9,7 @@ int main (int argc, char *argv[]) {
 	struct tm * timeinfo;
 	time ( &rawtime );
 	timeinfo = localtime ( &rawtime );
-	printf ( "%s started on  %s",argv[1],asctime (timeinfo) );
+	printf ( "%s started on  %s",argv[0],asctime (timeinfo) );
 
 	//Display argument
 	printf("file: %s\n", argv[1]);
